@@ -8,7 +8,7 @@
   <body bgcolor="lightgrey">
       <h1><center>Vanja Visekruna-CheatSheet<center></h1>
 
-        <h1>Week 1</h1>
+
         <h1>Important things</h1>
 
         <h2>URL - Uniform Resource Locator</h2>
@@ -39,6 +39,23 @@
 
         <h2>title-element</h2>
         <p>The < title > tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</p>
+
+        <br /><b>HTML Headings:</b> HTML headings are defined with the < h1> to < h6> tags.(< h1> < /h1>)
+        <br /><b>HTML Links:</b>HTML links are defined with the < a>tag:< a href="https://www.w3schools.com">This is a link< /a>
+        <p><b>HTML Paragraphs:</b>HTML paragraphs are defined with the < p> tag:< p>This is a paragraph.< /p></p>
+        <p><b>HTML Images:</b>HTML images are defined with the < img> tag.The source file (src), alternative text (alt), width, and height are provided as attributes:< img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"></p>
+        <p>The < img> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+        <p><b>Images in Another Folder:If you have your images in a sub-folder, you must include the folder name in the src attribute(< img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"></b></p>
+        <p><b>Images on Another Server/Website:</b>Some web sites points to an external image on another server.To point to an image on another server, you must specify an absolute (full) URL in the src attribute:< img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"></p>
+
+        <p>HTML Elements:An HTML element is defined by a start tag, some content, and an end tag:< h1 Start Tag >My First Heading Content < /h1 Endtag> </p>
+        <p> Some HTML elements have no content (like the < br> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+        <p>Nested HTML Elements:HTML elements can be nested (this means that elements can contain other elements).</p>
+        <p>Empty HTML Elements(Void Elemnts):HTML elements with no content are called empty elements.The < br> tag defines a line break, and is an empty element without a closing tag:</p>
+        <p>HTML is Not Case Sensitive</p>
+        <p>HTML tags are not case sensitive: < P> means the same as < p>.</p>
+
+        <h1>Week 1</h1>
 
         <h1>World Wide Web General</h1>
 
@@ -128,10 +145,10 @@
       <h1>Html-Part</h1>
 
       <h2>Name the components of html elements properly</h2>
-      <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+      <p>An HTML element is defined by a start tag, some content, and an end tag. The HTML document itself begins with < html> and ends with < /html>. The visible part of the HTML document is between < body> and < /body>.</p>
 
       <h2>Identify void elements and how they are denoted</h2>
-      <p>Void elemnts don't have an endtag</p>
+      <p>Void elemnts don't have an endtag. Empty Elements (< br />)</p>
 
       <h2>Identify attributes</h2>
       <p>->All HTML elemts can have attributes</p>
@@ -139,8 +156,33 @@
       <p>->Attributes are always specified in <strong>the start tag</strong></p>
       <p>->Attributes usually come in name/value pairs like: <strong>name="value"</strong></p>
 
+      <p>The href Attribute: The < a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+
+      <p>The src Attribute:The < img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:< img src="img_girl.jpg"></p>
+      <p>There are two ways to specify the URL in the src attribute:1. Absolute URL - Links to an external image that is hosted on another website. Example: src= "https://www.w3schools.com/images/img_girl.jpg".</p>
+      <p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+      <p>Tip: It is almost always best to use relative URLs. They will not break if you change domain.</p>
+
+      <p>The width and height Attributes:The < img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):< img src="img_girl.jpg" width="500" height="600"></p>
+
+      <p>The alt Attribute:The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.(< img src="img_girl.jpg" alt="Girl with a jacket")></p>
+
+      <p>The style Attribute:The style attribute is used to add styles to an element, such as color, font, size, and more.(< p style="color:red;">This is a red paragraph.< /p>)</p>
+
+      <p>The lang Attribute:You should always include the lang attribute inside the < html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+      <p>The title Attribute:The title attribute defines some extra information about an element.(< p title="I'm a tooltip">This is a paragraph.</p>
+
+      <p>All HTML elements can have attributes</p>
+      <p>< a > specifies the URL of the page the link goes to</p>
+      <p>The src attribute of < img> specifies the path to the image to be displayed</p>
+      <p>The width and height attributes of < img> provide size information for images</p>
+      <p>The alt attribute of < img> provides an alternate text for an image</p>
+      <p>The style attribute is used to add styles to an element, such as color, font, size, and more</p>
+      <p>The lang attribute of the < html> tag declares the language of the Web page</p>
+      <p>The title attribute defines some extra information about an element</p>
+
       <h2>Write down the correct DOCTYPE declaration for html 5</h2>
-      <p><!DOCTYPE html></p>
+      <p>< !DOCTYPE html> The < !DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.</p>
 
       <h2>Write down syntactically correct statements for the following elements</h2>
       <h3>Article(< article >)</h3>
@@ -150,6 +192,15 @@
       <h5>Google Chrome</h5>
       <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
       </article>
+
+      <p>->line break (< br />)</p>
+      <p>->Headings (< h1 >, ...)</p>
+      <p>->Section with meta-information (< head>)</p>
+      <p>->Top level element (< html>),  Image named Team.jpg (< img src="Team.jpg">),  Paragraph (< p>), Section (< section>), Label appearing in the title bar (< title>), Link to other pages (< a>), Comment < !-- -->, Head with title and meta elements</p>
+      <br />Link:
+      <a href="edufs.edu.htl-leonding.ac.at">school</a> <!--comment test-->
+      <p><b>The < title> element is required and it defines the title of the document</b></p>
+      <p><b>The < meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings</b></p>
 
       <h4>Example Image</h4>
       <img src="http://chip01.chipimages.de/i/headfoot/chip-online-logo.gif">
@@ -161,27 +212,32 @@
       <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
       </section>
 
-      <h4>Example linking < a ></h4>
+      <h4>Example linking (Link) < a ></h4>
 
       <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>  <!-- linking -->
 
       <h1>Css-Part</h1>
       <h2>Name the components of a css rule properly</h2>
-      <p>A CSS rule-set consists of a selector and a declaration block</p>
+      <p>A CSS rule-set consists of a selector and a declaration block.</p>
       <p>The selector points want to style (Example: < h1 >)</p>
-      <p>A declaration block contains one or more declarations (seperated by semicolons)</p>
+      <p>A declaration block contains one or more declarations (seperated by semicolons). Each declaration includes a CSS property name and a value, separated by a colon.</p>
+      <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p></p>
+      <p><img src="https://www.w3schools.com/css/selector.gif" alt="CSS-Syntax" /></p>
 
       <h2>Use combinators properly: direct child, descendant, adjacent sibling, sibling (??)</h2>
 
       <h2>Specify colors by color names and in hexadecimal notation</h2>
-      <p>Red: ff0000 Blue:0000ff</p>
+      <p>Most important colors:</p>
+      <p>Red: ff0000 Blue:0000ff Yellow: FFFF00 Green: 008000</p>
       <p>Backgroundcolor: < h1 style="background-color:DodgerBlue;">Hello World< /h1 ></p>
       <p>Textcolor: < p style="background-color:Tomato;">Lorem ipsum...< /p ></p>
       <p>Bordercolor: < h1 style="border:2px solid Tomato;">Hello World< /h1 ></p>
 
       <h2>Declarations for color, background color</h2>
       <p>Declaration Color: Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
-      <p>Declaration Backgroundcolor: The CSS background properties are used to define the background effects for elements.</p>
+      <p>Declaration Backgroundcolor: The CSS background properties are used to define the background effects for elements. (background-color: lightblue;opacity: 0.3;)</p>
+      <p>The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element. The background-image property repeats an image both horizontally and vertically.</p>
+      <p>The background-position property is used to specify the position of the background image.</p>
 
       <h2>Pseudo classes for the < a > element</h2>
       <p>A pseudo-class is used to define a special state of an element.</p>
@@ -190,6 +246,7 @@
 
       <h2>Declaration for background image</h2>
       <p>The background-image property specifies an image to use as the background of an element. (in Body {} background-image: url("paper.gif");)</p>
+      <p>Opacity: specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0.</p>
 
       <h2>Declaration for text alignment (left, right, center, justify)</h2>
       <p>The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified. (in h {} text-align: center;)</p>
@@ -218,5 +275,17 @@
 
       <h2>Declarations for font weights</h2>
       <p>The font-weight property sets how thick or thin characters in text should be displayed. (p.normal {font-weight: normal;})</p>
+
+      <h2>CSS Combinators</h2>
+      <p>A combinator is something that explains the relationship between the selectors.</p>
+      <h2>Descendant Selector:</h2>
+      <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+      <h2>Child Selector:</h2>
+      <p>The child selector selects all elements that are the children of a specified element.</p>
+      <h2>Adjacent Sibling Selector:</h2>
+      <p>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.he adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.</p>
+      <h2>General Sibling Selector:</h2>
+      <p>The general sibling selector selects all elements that are siblings of a specified element.</p>
+
   </body>
 </html>
