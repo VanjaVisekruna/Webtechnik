@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Readng-Assignment 4</title>
+  </head>
+  <body>
+    <h1>Readng-Assignment 4</h1>
+
+    <h2>Box-Model</h2>
+    <p>Border elemts - A border that goes around the padding and content</p>
+    <p>Inline elemts - The content of the box, where text and images appear</p>
+    <p>Margin - Clears an area outside the border. The margin is transparent</p>
+    <p>Padding - Clears an area around the content. The padding is transparent</p>
+    <p>The difference between padding and margin is, the margin clears area outside the border, the padding clears area around the content</p>
+
+    <h2>Classes and Ids</h2>
+
+    <h3>selector for a certain class</h3>
+    <p>.class {
+    <p>css declarations;</p>
+    <p>}</p>
+
+    <h3>selector for a certain html element of a certain class</h3>
+    <p>.h1 {
+    <p>background-color: yellow;</p>
+    <p>}</p>
+
+    <h3>selector for a certain id</h3>
+    <p>#id {
+    <p>css declarations;</p>
+    <p>}</p>
+
+    <h3>selector for a certain html element of a certain id</h3>
+    <p>#firstname {
+    <p>background-color: yellow;</p>
+    <p>}</p>
+
+    <h3>start tag of a certain html element with a specific class</h3>
+    class="center large">This paragraph refers to two classes. < /p >
+
+    <h3>start tag of a certain html element with a specific id.</h3>
+
+    <h3>Do classes select one or more elements?</h3>
+    <p>They select more element</p>
+
+    <h3>Do ids select one or more elements?</h3>
+    <p>They select one element</p>
+
+    <h3>How often can classes / ids occur on one page?</h3>
+    <p>I tink as many as you need</p>
+
+    <h2>Floating</h2>
+
+    <h3>css declaration to make an html element float to the left</h3>
+
+    <p>img {</p>
+    <p>float: right;</p>
+    <p>}</p>
+
+    <h3>Make an html element stop floating around another (for a specific direction, for all directions)</h3>
+
+    <p>img {</p>
+    <p>float: none;</p>
+    <p>}</p>
+
+  </body>
+</html>
